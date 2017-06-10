@@ -9,15 +9,17 @@ Extreme AltF4 requires .NET Framework 4.5 or higher to run properly.
 
 ### Installing
 
-1. Download the [->installer](build/Extreme-AltF4-1.0.1.exe)
+0. Uninstall an old version first before installing a new version.
+
+1. Download the latest installer from the release page
 2. Install it
 3. Restart your computer
 
 That's it.
 
-## Contributing
+### Uninstalling
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Just remove the application from the control panel.
 
 ## Authors
 
@@ -25,4 +27,4 @@ Marcel Bulla (Markellus)
 
 ## License
 
-This project is licensed under a custom license! - see the [LICENSE](LICENSE) file for details.
+This project has a custom license! - see the [LICENSE](LICENSE) file for details.
