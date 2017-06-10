@@ -9,7 +9,7 @@ Extreme AltF4 requires .NET Framework 4.5 or higher to run properly.
 
 ### Installing
 
-1. Download the [build/Extreme-AltF4-1.0.1.exe](installer)
+1. Download the [->installer](build/Extreme-AltF4-1.0.1.exe)
 2. Install it
 3. Restart your computer
 
