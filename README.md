@@ -5,7 +5,7 @@ Extreme AltF4 is a tool that overrides the default behavior of windows when pres
 
 ### Prerequisites
 
-Extreme AltF4 requires .NET Framework 4.5 or higher to run properly.
+Extreme AltF4 requires .NET Framework 4.6.1 or higher to run properly.
 
 ### Installing
 
@@ -27,4 +27,4 @@ Marcel Bulla (Markellus)
 
 ## License
 
-This project has a custom license! - see the [LICENSE](LICENSE) file for details.
+See the [LICENSE](LICENSE) file for details.
