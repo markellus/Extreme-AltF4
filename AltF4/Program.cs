@@ -23,7 +23,7 @@ namespace AltF4
             //check if the program is already running
             Process[] _procRunning = Process.GetProcessesByName("AltF4");
 
-            if(_procRunning.Length > 0)
+            if(_procRunning.Length > 1)
             {
                 Environment.Exit(0);
             }
