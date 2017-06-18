@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/**********************************************
+ *               Extreme AltF4                *
+ *            (C) 2017 Marcel Bulla           *
+ * https://github.com/markellus/Extreme-AltF4 *
+ *  See file LICENSE for license information  *
+ **********************************************/
+
+using System;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static AltF4.NativeMethods;
 

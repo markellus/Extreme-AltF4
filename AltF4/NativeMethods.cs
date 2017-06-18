@@ -1,9 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿/**********************************************
+ *               Extreme AltF4                *
+ *            (C) 2017 Marcel Bulla           *
+ * https://github.com/markellus/Extreme-AltF4 *
+ *  See file LICENSE for license information  *
+ **********************************************/
+
+using System;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AltF4
 {
