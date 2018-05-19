@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:tb="http://www.hardcodet.net/taskbar"
+                    xmlns:local="clr-namespace:De.Markellus.Altf4.Gui.Xaml">
+
+    <ContextMenu x:Shared="false" x:Key="SysTrayMenu">
+        <Separator />
+        <MenuItem Header="Extreme AltF4 by Markellus" Command="{Binding CmdDisabled}" />
+        <Separator />
+        <MenuItem Header="Settings"                   Command="{Binding CmdShowSettings}" />
+        <MenuItem Header="About"                      Command="{Binding CmdShowAbout}" />
+        <MenuItem Header="Exit"                       Command="{Binding CmdExit}" />
+    </ContextMenu>
+
+    <tb:TaskbarIcon x:Key="NotifyIcon"
+                    IconSource="/De.Markellus.Altf4.Gui;component/Resources/icons8-accuracy-100.ico"
+                    ToolTipText=""
+                    DoubleClickCommand="{Binding CmdShowSettings}"
+                    ContextMenu="{StaticResource SysTrayMenu}">
+
+        <tb:TaskbarIcon.DataContext>
+            <local:NotifyIconViewModel />
+        </tb:TaskbarIcon.DataContext>
+    </tb:TaskbarIcon>
+    
+</ResourceDictionary>

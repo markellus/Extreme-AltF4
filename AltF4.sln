@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltF4", "AltF4\AltF4.csproj", "{2C95B8F7-6EA4-4578-ACAC-BC64256AF4A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.Markellus.Altf4.Gui", "De.Markellus.Altf4.Gui\De.Markellus.Altf4.Gui.csproj", "{CFFA5261-B0D0-46D9-9475-F1FF9BFF5BD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{2C95B8F7-6EA4-4578-ACAC-BC64256AF4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C95B8F7-6EA4-4578-ACAC-BC64256AF4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C95B8F7-6EA4-4578-ACAC-BC64256AF4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFA5261-B0D0-46D9-9475-F1FF9BFF5BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFA5261-B0D0-46D9-9475-F1FF9BFF5BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFA5261-B0D0-46D9-9475-F1FF9BFF5BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFA5261-B0D0-46D9-9475-F1FF9BFF5BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C17C1B4-C736-416F-8C4C-07C04F3BD0F9}
 	EndGlobalSection
 EndGlobal

@@ -1,3 +1,5 @@
+#TODO: https://icons8.com/license/
+
 # Extreme Alt F4
 
 Extreme AltF4 is a tool that overrides the default behavior of windows when pressing alt+f4. Instead of giving a program the opportunity to deny closing himself, Extreme AltF4 will kill the program immediatly. 
