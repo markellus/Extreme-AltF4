@@ -22,15 +22,18 @@ namespace AltF4
 
         private static AltF4Handler _instance = new AltF4Handler();
 
-        private static SafeList<Keys> _listKeys;
+        private SafeList<Keys> _listKeys;
 
-        private static IntPtr _hookID = IntPtr.Zero;
+        private IntPtr _hookID = IntPtr.Zero;
 
         private bool _fired;
 
-        private LowLevelKeyboardProc _callback;
+        private string[] _whitelistedPrograms =
+        {
+            "explorer"
+        };
 
-        public event EventHandler OnAltF4;
+        private LowLevelKeyboardProc _callback;
 
         private AltF4Handler()
         {
@@ -65,7 +68,7 @@ namespace AltF4
             }
 
             int vkCode = Marshal.ReadInt32(lParam);
-            Keys code = (Keys)vkCode;
+            Keys code  = (Keys)vkCode;
 
             if (KeyDown(wParam))
             {
@@ -82,7 +85,24 @@ namespace AltF4
                 if(!_fired)
                 {
                     _fired = true;
-                    OnAltF4?.Invoke(this, EventArgs.Empty);
+                    Process procForeground = GetForegoundProgram();
+
+                    if(procForeground != null)
+                    {
+                        bool isWhitelisted = false;
+                        foreach(string whitelisted in _whitelistedPrograms)
+                        {
+                            if (whitelisted == procForeground.ProcessName)
+                            {
+                                isWhitelisted = true;
+                            }
+                        }
+                       
+                        if(!isWhitelisted)
+                        {
+                            procForeground.Kill();
+                        }
+                    }
                 }
                 return (IntPtr)1;
             }
@@ -102,6 +122,28 @@ namespace AltF4
         private bool KeyUp(IntPtr wParam)
         {
             return (wParam == (IntPtr)WM_KEYUP || wParam == (IntPtr)WM_SYSKEYUP);
+        }
+
+        private Process GetForegoundProgram()
+        {
+            Process[] processCollection = Process.GetProcesses();
+            if (processCollection != null && processCollection.Length >= 1 &&
+                processCollection[0] != null)
+            {
+                IntPtr activeWindowHandle = NativeMethods.GetForegroundWindow();
+                //Optional int ProcessID;
+                //Optional Win32.GetWindowThreadProcessId(GetForegroundWindow(),out ProcessID)
+                foreach (Process wordProcess in processCollection)
+                {
+                    //Optional if( ProcessID == wordProcess.Id ) return ApplicationState.Focused;
+                    if (wordProcess.MainWindowHandle == activeWindowHandle)
+                    {
+                        return wordProcess;
+                    }
+                }
+            }
+            return null;
+
         }
     }
 }

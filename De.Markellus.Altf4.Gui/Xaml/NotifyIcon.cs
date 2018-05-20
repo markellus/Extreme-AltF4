@@ -51,7 +51,6 @@ namespace De.Markellus.Altf4.Gui.Xaml
             }
         }
 
-
         public ICommand CmdExit
         {
             get
