@@ -9,9 +9,9 @@ using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using static AltF4.NativeMethods;
+using static De.Markellus.AltF4.NativeMethods;
 
-namespace AltF4
+namespace De.Markellus.AltF4
 {
     internal class AltF4Handler
     {
@@ -130,7 +130,7 @@ namespace AltF4
             if (processCollection != null && processCollection.Length >= 1 &&
                 processCollection[0] != null)
             {
-                IntPtr activeWindowHandle = NativeMethods.GetForegroundWindow();
+                IntPtr activeWindowHandle = GetForegroundWindow();
                 //Optional int ProcessID;
                 //Optional Win32.GetWindowThreadProcessId(GetForegroundWindow(),out ProcessID)
                 foreach (Process wordProcess in processCollection)

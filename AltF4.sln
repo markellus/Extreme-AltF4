@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltF4", "AltF4\AltF4.csproj", "{2C95B8F7-6EA4-4578-ACAC-BC64256AF4A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.Markellus.AltF4", "De.Markellus.AltF4\De.Markellus.AltF4.csproj", "{2C95B8F7-6EA4-4578-ACAC-BC64256AF4A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.Markellus.Altf4.Gui", "De.Markellus.Altf4.Gui\De.Markellus.Altf4.Gui.csproj", "{CFFA5261-B0D0-46D9-9475-F1FF9BFF5BD5}"
 EndProject

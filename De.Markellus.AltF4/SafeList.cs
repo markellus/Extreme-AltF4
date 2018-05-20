@@ -7,7 +7,7 @@
 
 using System.Collections.Generic;
 
-namespace AltF4
+namespace De.Markellus.AltF4
 {
     internal class SafeList<T> : List<T>
     {

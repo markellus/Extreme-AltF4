@@ -1,5 +1,8 @@
 .vs
 Output
-AltF4/bin
-AltF4/obj
+bin
+packages
+*/obj/
 !build/*
+*.Designer.cs
+*.csproj.user

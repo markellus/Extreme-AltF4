@@ -8,7 +8,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace AltF4
+namespace De.Markellus.AltF4
 {
     internal static class NativeMethods
     {
